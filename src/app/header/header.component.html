@@ -1,0 +1,20 @@
+<header>
+  <nav>
+    <div class="nav-left">
+      <div class="logo" (click)="home()">
+        <img src="/assets/l.png" alt="Veg Logo">
+      </div>
+    </div>
+    <div class="nav-middle">
+      <ul>
+        <li><a routerLink="/new" routerLinkActive="active"><i class="bi bi-cloud-upload"></i> Upload</a></li>
+        <li><a routerLink="/profile" routerLinkActive="active"><i class="bi bi-card-list"></i> Profile</a></li>
+        <li><a routerLink="/list/all" routerLinkActive="active"><i class="bi bi-list"></i> List</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <a *ngIf="!user" routerLink="/login" class="login-button"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+      <button *ngIf="user" (click)="handleLogout()" class="login-button"><i class="bi bi-box-arrow-in-right"></i> Logout</button>
+    </div>
+  </nav>
+</header>

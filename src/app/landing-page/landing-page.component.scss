@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 50px;
+  background: url('/assets/v.jpg') no-repeat center center;
+  background-size: cover;
+  height: 45%;
+}
+
+.hero .content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.custom-search-bar {
+  display: flex;
+  margin: 20px 0;
+  width: 70%;
+  max-width: 600px;
+}
+
+.custom-search-bar input {
+  flex-grow: 1;
+  padding: 10px; /* Augmenté pour plus de padding intérieur */
+  border: none;
+  border-radius: 35px 0 0 35px;
+  outline: none;
+  height: 35px; /* Augmenté pour agrandir la hauteur */
+  font-size: 20px; /* Augmenté pour une taille de texte plus grande */
+}
+
+
+.custom-search-bar button {
+  padding: 15px;
+  border: none;
+  border-radius: 0 35px 35px 0;
+  background: #FFA500;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-search-bar button:hover {
+  background: #FF4500;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 50px;
+  background-color: #2a2a2a;
+  border-top: 1px solid #444;
+}
+
+.menu-items .item {
+  text-align: center;
+  color: #fff;
+}
+
+.menu-items .item img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.menu-items .item p {
+  margin: 5px 0;
+}
+
+.menu-items .item button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #FFA500, #FF4500);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+
+.menu-items .item button:hover {
+  background: linear-gradient(135deg, #FF4500, #FFA500);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}

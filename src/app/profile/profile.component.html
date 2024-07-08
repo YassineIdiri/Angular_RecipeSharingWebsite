@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card">
+    
+    <div class="card-body" *ngIf="userRecipes.length; else noRecipes">
+      <div class="recipes-grid">
+        <div class="recipe-card" *ngFor="let recipe of userRecipes; let i = index;">
+          <img [src]="recipe.image" class="recipe-image" alt="{{recipe.title}}">
+          <div class="recipe-details">
+            <h5 class="recipe-title">{{recipe.title}}</h5>
+            <button class="delete-button" (click)="deleteRecipe(recipe.id)">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ng-template #noRecipes>
+      <p class="text-center">You haven't posted any recipes.</p>
+    </ng-template>
+  </div>
+</div>

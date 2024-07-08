@@ -1,0 +1,15 @@
+<div class="card">
+    <img [src]="ARecipe.image" alt="Recipe Image">
+    <h3>{{ ARecipe.title }}</h3>
+    <div class="like-info">
+      <i class="bi bi-heart-fill"></i> {{ likesCount }} Likes
+    </div>
+    <div class="actions">
+      <button (click)="onView()"><i class="bi bi-arrow-up-right-square"></i> View</button>
+      <button (click)="onLike(ARecipe.id)">
+        <i class="bi bi-heart"></i> Like
+      </button>
+    </div>
+   
+  </div>
+  

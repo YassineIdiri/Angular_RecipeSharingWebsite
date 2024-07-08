@@ -1,0 +1,32 @@
+<div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form [formGroup]="loginForm">
+        <input type="text" placeholder="Enter your email" formControlName="email">
+        <input type="password" placeholder="Enter your password" formControlName="password">
+        <button type="submit" class="button" (click)="onSubmitFormLogin()" [disabled]="loginForm.invalid">Login</button>
+
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label for="check">Signup</label>
+        </span>
+      </div>
+    </div>
+    <div class="registration form">
+      <header>Signup</header>
+      <form [formGroup]="registerForm">
+        <input type="text" placeholder="Enter your email" formControlName="email">
+        <input type="password" placeholder="Enter a password" formControlName="password">
+        <input type="password" placeholder="Confirm your password" formControlName="password2">
+        <button type="submit" class="button" (click)="onSubmitFormRegister()" [disabled]="registerForm.invalid">Signup</button>
+
+      </form>
+      <div class="signup">
+        <span class="signup">Already have an account?
+         <label for="check">Login</label>
+        </span>
+      </div>
+    </div>
+  </div>
