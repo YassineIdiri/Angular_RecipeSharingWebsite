@@ -11,9 +11,9 @@
 
 <div align="center">
 
-![Repo Size](https://img.shields.io/github/repo-size/YassineIdiri/Laravel_E-CommerceWebsite.svg)
-![Commits](https://img.shields.io/github/commit-activity/m/YassineIdiri/Laravel_E-CommerceWebsite.svg)
-![Languages](https://img.shields.io/github/languages/top/YassineIdiri/Laravel_E-CommerceWebsite.svg)
+![Repo Size](https://img.shields.io/github/repo-size/YassineIdiri/Angular_RecipeSharingWebsite.svg)
+![Commits](https://img.shields.io/github/commit-activity/m/YassineIdiri/Angular_RecipeSharingWebsite.svg)
+![Languages](https://img.shields.io/github/languages/top/YassineIdiri/Angular_RecipeSharingWebsite.svg)
 
 </div>
 
